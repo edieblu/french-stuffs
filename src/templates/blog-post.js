@@ -3,7 +3,6 @@ import { Link, graphql } from "gatsby"
 
 import Bio from "../components/bio"
 import Layout from "../components/layout"
-import Vocabulary from "../components/vocabulary"
 import SEO from "../components/seo"
 import { rhythm, scale } from "../utils/typography"
 
@@ -30,7 +29,6 @@ class BlogPostTemplate extends React.Component {
         >
           {post.frontmatter.date}
         </p>
-        <Vocabulary />
         <div dangerouslySetInnerHTML={{ __html: post.html }} />
 
         <hr

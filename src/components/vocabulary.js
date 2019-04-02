@@ -1,14 +1,15 @@
 import React from "react"
+import VocabularyName from "./vocabulary-name"
 
 function Vocabulary() {
   return (
     <div>
-      <h2>Vocabulary</h2>
+      <h4>Total</h4>
       <table>
         <thead>
           <tr>
             <th>Name</th>
-            <th>Words/Points</th>
+            <th>Words/Events</th>
             <th>Minutes</th>
             <th>Streak</th>
           </tr>
@@ -16,17 +17,7 @@ function Vocabulary() {
         <tbody>
           <tr>
             <td>
-              {" "}
-              <span
-                style={{
-                  color: `white`,
-                  backgroundColor: `rgb(35, 174, 49)`,
-                  padding: `5px`,
-                  borderRadius: `2px`,
-                }}
-              >
-                Memrise
-              </span>
+              <VocabularyName>Memrise</VocabularyName>
             </td>
             <td>135</td>
             <td>24</td>
@@ -34,16 +25,7 @@ function Vocabulary() {
           </tr>
           <tr>
             <td>
-              <span
-                style={{
-                  color: `white`,
-                  backgroundColor: `black`,
-                  padding: `5px`,
-                  borderRadius: `2px`,
-                }}
-              >
-                Anki
-              </span>
+              <VocabularyName>Anki</VocabularyName>
             </td>
             <td>43</td>
             <td>4</td>

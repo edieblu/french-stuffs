@@ -3,6 +3,7 @@ import { Link, graphql } from "gatsby"
 
 import Bio from "../components/bio"
 import Layout from "../components/layout"
+import Vocabulary from "../components/vocabulary"
 import SEO from "../components/seo"
 import { rhythm } from "../utils/typography"
 
@@ -19,6 +20,7 @@ class BlogIndex extends React.Component {
           keywords={[`blog`, `gatsby`, `javascript`, `react`]}
         />
         <Bio />
+        <Vocabulary />
         {posts.map(({ node }) => {
           const title = node.frontmatter.title || node.fields.slug
           return (

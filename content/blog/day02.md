@@ -1,26 +1,21 @@
 ---
 title: Day 2
 date: "2019-04-02"
-description: "Mostly studied vocabulary, some passive listening and looking for resources."
+description: "TODO"
 ---
 
-<strong>Vocabulary:</strong>
-Memrise French level 4
-2346 pts
-Streak 1
+<h2>Vocabulary</h2>
+TODO
+<p><strong>memrise</strong> deck (Memrise French level 4) <strong>135 events</strong> in <strong>25 minutes.</strong></p>
 
-Anki 5000 Most Common French Words
-Studied 83 cards in 10 minutes today. </br>
-Again count: 34 (59.0% correct) </br>
-Learn: 70, Review: 8, Relearn: 5, Filtered: 0 </br>
-Streak 2
+<p><strong>Anki</strong> 5000 Most Common French Words, studied <strong>83 cards</strong> in <strong>10 minutes </strong>today.</p>
 
-Listening (passive)
+<h2>Listening (passive)</h2>
 Arte TV
-50 min
 
 innerFrench
-20min
 
-Grammar
-Rules on nouns
+<h2>Grammar</h2>
+
+<h2>TV</h2>
+The Break: Episode 2?
