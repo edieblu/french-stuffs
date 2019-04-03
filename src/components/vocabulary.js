@@ -19,17 +19,17 @@ function Vocabulary() {
             <td>
               <VocabularyName>Memrise</VocabularyName>
             </td>
-            <td>135</td>
-            <td>24</td>
-            <td>1</td>
+            <td>398</td>
+            <td>60</td>
+            <td>2</td>
           </tr>
           <tr>
             <td>
               <VocabularyName>Anki</VocabularyName>
             </td>
-            <td>43</td>
-            <td>4</td>
-            <td>1</td>
+            <td>126</td>
+            <td>14</td>
+            <td>2</td>
           </tr>
         </tbody>
       </table>
