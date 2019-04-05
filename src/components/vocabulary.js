@@ -19,17 +19,25 @@ function Vocabulary() {
             <td>
               <VocabularyName>Memrise</VocabularyName>
             </td>
-            <td>618</td>
-            <td>86</td>
-            <td>3</td>
+            <td>866</td>
+            <td>106</td>
+            <td>4</td>
           </tr>
           <tr>
             <td>
               <VocabularyName>Anki</VocabularyName>
             </td>
-            <td>217</td>
-            <td>26</td>
-            <td>3</td>
+            <td>314</td>
+            <td>37</td>
+            <td>4</td>
+          </tr>
+          <tr>
+            <td>
+              <VocabularyName>ClozeMaster</VocabularyName>
+            </td>
+            <td>143</td>
+            <td>X</td>
+            <td>1</td>
           </tr>
         </tbody>
       </table>
