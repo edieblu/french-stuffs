@@ -13,4 +13,4 @@ description: "<p><strong>memrise</strong> deck (Memrise French level 5, level 6)
 
 <h2>Michel Thomas</h2>
 <strong>Foundation 8:</strong>10-12
-<strong>Foundation Review</strong>1-27
+<strong>Foundation Review 1</strong>1-27
