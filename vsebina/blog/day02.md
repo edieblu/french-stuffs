@@ -15,7 +15,6 @@ Anki:
   streak: 1
 ClozeMaster:
   events: 0
-  minutes: 0
   streak: 0
 
 ---
