@@ -12,7 +12,70 @@ class BlogIndex extends React.Component {
     const { data } = this.props
     const siteTitle = data.site.siteMetadata.title
     const posts = data.allMarkdownRemark.edges
-
+    const totals = data.allMarkdownRemark.edges.reduce(
+      (prev, curr) => {
+        if (curr.node.frontmatter.memrise) {
+          return {
+            node: {
+              frontmatter: {
+                memrise: {
+                  events:
+                    prev.node.frontmatter.memrise.events +
+                    curr.node.frontmatter.memrise.events,
+                  minutes:
+                    prev.node.frontmatter.memrise.minutes +
+                    curr.node.frontmatter.memrise.minutes,
+                  streak:
+                    prev.node.frontmatter.memrise.streak +
+                    curr.node.frontmatter.memrise.streak,
+                },
+                Anki: {
+                  events:
+                    prev.node.frontmatter.Anki.events +
+                    curr.node.frontmatter.Anki.events,
+                  minutes:
+                    prev.node.frontmatter.Anki.minutes +
+                    curr.node.frontmatter.Anki.minutes,
+                  streak:
+                    prev.node.frontmatter.Anki.streak +
+                    curr.node.frontmatter.Anki.streak,
+                },
+                ClozeMaster: {
+                  events:
+                    prev.node.frontmatter.ClozeMaster.events +
+                    curr.node.frontmatter.ClozeMaster.events,
+                  streak:
+                    prev.node.frontmatter.ClozeMaster.streak +
+                    curr.node.frontmatter.ClozeMaster.streak,
+                },
+              },
+            },
+          }
+        } else {
+          return prev
+        }
+      },
+      {
+        node: {
+          frontmatter: {
+            memrise: {
+              events: 0,
+              minutes: 0,
+              streak: 0,
+            },
+            Anki: {
+              events: 0,
+              minutes: 0,
+              streak: 0,
+            },
+            ClozeMaster: {
+              events: 0,
+              streak: 0,
+            },
+          },
+        },
+      }
+    )
     return (
       <Layout location={this.props.location} title={siteTitle}>
         <SEO
@@ -20,7 +83,7 @@ class BlogIndex extends React.Component {
           keywords={[`blog`, `gatsby`, `javascript`, `react`]}
         />
         <Bio />
-        <Vocabulary />
+        <Vocabulary {...totals.node.frontmatter} />
         {posts.map(({ node }) => {
           const title = node.frontmatter.title || node.fields.slug
           return (
@@ -78,6 +141,20 @@ export const pageQuery = graphql`
             date(formatString: "MMMM DD, YYYY")
             title
             description
+            memrise {
+              events
+              minutes
+              streak
+            }
+            Anki {
+              events
+              minutes
+              streak
+            }
+            ClozeMaster {
+              events
+              streak
+            }
           }
         }
       }

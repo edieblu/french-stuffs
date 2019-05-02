@@ -2,6 +2,7 @@ module.exports = {
   siteMetadata: {
     title: `Learning French Stuffs`,
     author: `Eva Dovc`,
+    petNames: [`Gytha`, `Magrat`, `Gordi`],
     description: `Some notes from my French learning journey`,
     siteUrl: `https://gatsby-starter-blog-demo.netlify.com/`,
     social: {
@@ -12,14 +13,14 @@ module.exports = {
     {
       resolve: `gatsby-source-filesystem`,
       options: {
-        path: `${__dirname}/content/blog`,
+        path: `${__dirname}/vsebina/blog`,
         name: `blog`,
       },
     },
     {
       resolve: `gatsby-source-filesystem`,
       options: {
-        path: `${__dirname}/content/assets`,
+        path: `${__dirname}/vsebina/assets`,
         name: `assets`,
       },
     },
@@ -63,7 +64,7 @@ module.exports = {
         background_color: `#ffffff`,
         theme_color: `#663399`,
         display: `minimal-ui`,
-        icon: `content/assets/france-icon.png`,
+        icon: `vsebina/assets/france-icon.png`,
       },
     },
     `gatsby-plugin-offline`,

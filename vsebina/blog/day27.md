@@ -11,5 +11,3 @@ description: "<p><strong>memrise</strong> deck (Memrise French level 5, level 6)
 <p><strong>Anki</strong> deck (5000 Most Common French Words), studied <strong>131 cards</strong> in <strong>10 minutes </strong>today.</p>
 <p><strong>ClozeMaster</strong> deck (Fluency Fast Track), studied <strong>696 points</strong>.</p>
 
-<h2>TV</h2>
-Call My Agent: Episode 2

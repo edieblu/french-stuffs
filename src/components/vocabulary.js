@@ -1,7 +1,8 @@
 import React from "react"
 import VocabularyName from "./vocabulary-name"
 
-function Vocabulary() {
+function Vocabulary(props) {
+  const { memrise, Anki, ClozeMaster } = props
   return (
     <div>
       <h4>Total</h4>
@@ -19,25 +20,25 @@ function Vocabulary() {
             <td>
               <VocabularyName>Memrise</VocabularyName>
             </td>
-            <td>9986</td>
-            <td>571</td>
-            <td>29</td>
+            <td>{memrise.events}</td>
+            <td>{memrise.minutes}</td>
+            <td>{memrise.streak}</td>
           </tr>
           <tr>
             <td>
               <VocabularyName>Anki</VocabularyName>
             </td>
-            <td>3595</td>
-            <td>406</td>
-            <td>29</td>
+            <td>{Anki.events}</td>
+            <td>{Anki.minutes}</td>
+            <td>{Anki.streak}</td>
           </tr>
           <tr>
             <td>
               <VocabularyName>ClozeMaster</VocabularyName>
             </td>
-            <td>18289</td>
+            <td>{ClozeMaster.events}</td>
             <td>X</td>
-            <td>25</td>
+            <td>{ClozeMaster.streak}</td>
           </tr>
         </tbody>
       </table>
