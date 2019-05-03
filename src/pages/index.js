@@ -59,16 +59,19 @@ class BlogIndex extends React.Component {
         node: {
           frontmatter: {
             memrise: {
+              deck: "",
               events: 0,
               minutes: 0,
               streak: 0,
             },
             Anki: {
+              deck: "",
               events: 0,
               minutes: 0,
               streak: 0,
             },
             ClozeMaster: {
+              deck: "",
               events: 0,
               streak: 0,
             },
@@ -142,16 +145,19 @@ export const pageQuery = graphql`
             title
             description
             memrise {
+              deck
               events
               minutes
               streak
             }
             Anki {
+              deck
               events
               minutes
               streak
             }
             ClozeMaster {
+              deck
               events
               streak
             }
