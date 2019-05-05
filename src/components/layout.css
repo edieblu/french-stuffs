@@ -1,0 +1,25 @@
+.french:hover {
+  padding: 33.33%;
+  background-color: white;
+  position: relative;
+}
+
+.french:hover:before {
+  content: "";
+  width: 33.33%;
+  height: 100%;
+  background-color: #0055a4;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.french:hover:after {
+  content: "";
+  width: 33.33%;
+  height: 100%;
+  background-color: #ef4135;
+  position: absolute;
+  top: 0;
+  right: 0;
+}

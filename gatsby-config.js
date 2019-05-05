@@ -13,14 +13,14 @@ module.exports = {
     {
       resolve: `gatsby-source-filesystem`,
       options: {
-        path: `${__dirname}/vsebina/blog`,
+        path: `${__dirname}/contents/blog`,
         name: `blog`,
       },
     },
     {
       resolve: `gatsby-source-filesystem`,
       options: {
-        path: `${__dirname}/vsebina/assets`,
+        path: `${__dirname}/contents/assets`,
         name: `assets`,
       },
     },
@@ -64,7 +64,7 @@ module.exports = {
         background_color: `#ffffff`,
         theme_color: `#663399`,
         display: `minimal-ui`,
-        icon: `vsebina/assets/france-icon.png`,
+        icon: `contents/assets/france-icon.png`,
       },
     },
     `gatsby-plugin-offline`,
