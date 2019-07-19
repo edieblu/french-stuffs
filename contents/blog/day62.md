@@ -1,19 +1,19 @@
 ---
-title: Day 60
-date: "2019-07-10"
+title: Day 62
+date: "2019-07-12"
 description: "french"
 memrise:
   deck: "French level 7, Advanced vocabulary"
-  events: 316
+  events: 347
   minutes: 16
   streak: 1
 Anki:
   deck: "5000 Most Common French Words"
-  events: 74
-  minutes: 7
+  events: 150
+  minutes: 12
   streak: 1
 ClozeMaster:
   deck: "French Fluency Fast Track"
-  events: 536
+  events: 528
   streak: 1
 ---
